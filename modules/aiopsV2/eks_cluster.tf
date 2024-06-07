@@ -1,6 +1,5 @@
 module "eks-cluster-role" {
   source  = "./modules/iam_roles"
-  version = ">= 2.0.0"
 
   account_abbreviation = local.acct_abbreviation
   name                 = "${var.eks-cluster-name}-role"
