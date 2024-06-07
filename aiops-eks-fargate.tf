@@ -6,7 +6,7 @@ terraform {
   }
 }
 
-module "ami-gvt-eks-fargate-cluster" {
+module "aiops-eks-fargate-cluster" {
   source = "./modules/aiopsV2"
 
   account_abbreviation = "ai"
