@@ -7,6 +7,7 @@ terraform {
   }
 }
 
+
 module "aiops-eks-fargate-cluster" {
   source = "./modules/aws-eks-cluster/aiopsV2"
 
