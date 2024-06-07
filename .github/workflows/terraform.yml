@@ -46,7 +46,7 @@ name: 'Terraform'
 
 on:
   push:
-    branches: [ "eks-cluster-deploy" ]
+    branches: [ "eks-deploy" ]
   pull_request:
 
 permissions:
