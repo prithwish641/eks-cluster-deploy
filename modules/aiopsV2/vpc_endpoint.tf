@@ -1,6 +1,5 @@
 module "eks_vpc_endpoints" {
   source  = "./modules/vpc_endpoints"
-  version = ">= 2.0.0"
 
   aws_account_abbreviation = local.acct_abbreviation
   vpc_id                   = var.vpc_id
