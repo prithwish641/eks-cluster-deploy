@@ -29,7 +29,7 @@ module "aiops-eks-fargate-cluster" {
         Test = "kube-system"
       }
     }
-    ami-gvt-app = {
+    aiops-app = {
       namespace = "aiops-app"
       tags = {
         Test = "aiops-app"
