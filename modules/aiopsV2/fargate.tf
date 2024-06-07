@@ -1,6 +1,5 @@
 module "eks-fargate-profile-roles" {
   source  = "./modules/iam_roles"
-  version = ">= 2.0.0"
   count   = length(var.fargate_profiles) > 0 ? 1 : 0
 
   account_abbreviation = local.acct_abbreviation
