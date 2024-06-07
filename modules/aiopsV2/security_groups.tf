@@ -52,8 +52,6 @@ locals {
 
 module "eks-security-group-cluster" {
   source  = "./modules/security_groups"
-  version = ">= 2.0.0"
-
   aws_account_abbreviation = local.acct_abbreviation
   vpc_id                   = var.vpc_id
   security_groups = {
@@ -65,7 +63,6 @@ module "eks-security-group-cluster" {
 
 module "eks-security-group-worker-node" {
   source  = "./modules/security_groups"
-  version = ">= 2.0.0"
 
   aws_account_abbreviation = local.acct_abbreviation
   vpc_id                   = var.vpc_id
