@@ -59,7 +59,7 @@ resource "aws_launch_template" "default" {
   network_interfaces {
     associate_public_ip_address = true
     delete_on_termination       = true
-    security_groups             = [module.eks-security-group-worker-node.sg_ids["${local.acct_abbreviation}-${data.aws_region.current.name}-sg-ami-gvt-eks-worker-nodes"]]
+    security_groups             = [module.eks-security-group-worker-node.sg_ids["${local.acct_abbreviation}-${data.aws_region.current.name}-sg-aiops-eks-worker-nodes"]]
   }
   # Supplying custom tags to EKS instances is another use-case for LaunchTemplates
   tag_specifications {
