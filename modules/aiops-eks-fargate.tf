@@ -9,7 +9,7 @@ terraform {
 
 
 module "aiops-eks-fargate-cluster" {
-  source = "./modules/aws-eks-cluster/aiopsV2"
+  source = "./aws-eks-cluster/aiopsV2"
 
   account_abbreviation = "ai"
   prod_non-prod        = "non-prod"
