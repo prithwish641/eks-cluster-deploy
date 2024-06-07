@@ -1,3 +1,11 @@
+terraform {
+  backend "s3" {
+    bucket = "aiops-logs-bucket"
+    key    = "tfstatefolder/terraform.tfstate"
+    region = "us-east-1"
+  }
+}
+
 module "ami-gvt-eks-fargate-cluster" {
   source = "./modules/aiopsV2"
 
